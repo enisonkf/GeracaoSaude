@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kelvinferreira.geracaosaude.ExibirIndices">
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/grafico"
+        android:layout_width="match_parent"
+        android:layout_height="295dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:text="Data"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:text="Peso"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_alt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:text="Altura"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_imc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.25"
+            android:gravity="center_horizontal"
+            android:text="IMC"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lista_Indices"
+        android:layout_width="match_parent"
+        android:layout_height="536dp" />
+</LinearLayout>

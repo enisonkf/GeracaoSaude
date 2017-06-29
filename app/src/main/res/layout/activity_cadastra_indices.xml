@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_weight="100"
+    tools:context="com.example.kelvinferreira.geracaosaude.CadastraIndices">
+
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="10"
+        app:srcCompat="@drawable/gs_icon_100_60" />
+
+    <TextView
+        android:id="@+id/tv_ins_ind_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Bem vindo Sr./Sra.: "/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="80">
+
+        <TextView
+            android:id="@+id/tv_ins_ind_peso"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center"
+            android:text="Peso em KG"
+            android:textSize="28dp" />
+
+        <EditText
+            android:id="@+id/tf_ins_ind_peso"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tv_ins_ind_altura"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center"
+            android:text="Altura em metros"
+            android:textSize="28dp" />
+
+        <EditText
+            android:id="@+id/tf_ins_ind_altura"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tv_ins_ind_imc_inf"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|center"
+            android:text="IMC"
+            android:textSize="28dp" />
+
+        <TextView
+            android:id="@+id/tv_ins_ind_imc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical|center"
+            android:textSize="50dp" />
+        <TextView
+            android:id="@+id/tv_ins_ind_notifica"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            android:layout_gravity="center"
+            android:text="Abaixo do peso"/>
+
+        <Button
+            android:id="@+id/bt_gravar_imc"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_horizontal"
+            android:text="Gravar"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/bt_exibir_dados"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_gravity="top|center_horizontal"
+            android:text="Exibir dados"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</LinearLayout>
